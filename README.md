@@ -45,7 +45,7 @@ A html selector that should be the parent of the html you want to add. The conte
 ```
 renderer.state({ data : [...], otherProperties : true });
 ```
-_Add data to an script tag that you can access on the client again. This prevents loading the same data on the client again. The data will be available by accessing `window.__state__`._
+_Add data to a script tag that you can access on the client again. This prevents loading the same data on the client again. The data will be available by accessing `window.__state__`._
 
 **state:object**  
 An object that has been loaded on the server that you want to transfer to the client.
