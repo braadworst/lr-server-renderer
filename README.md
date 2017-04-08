@@ -1,6 +1,7 @@
 # lg-server-renderer reference
 
 Server side renderer for lagoon road.
+
 | Information | - |
 | ----------- | - |
 | Code coverage | [![Coverage Status](https://coveralls.io/repos/github/lagoon-road/lr-server-renderer/badge.svg?branch=master)](https://coveralls.io/github/lagoon-road/lr-server-renderer?branch=master) |
@@ -17,7 +18,9 @@ Server side renderer for lagoon road.
 ```
 renderer.template('<html>...</html>');
 ```
+
 _Method sets the template for the output, all components will be added to this template_
+
 **html:string**  
 The template you want to use for the components and state that you might want to add.
 
@@ -27,11 +30,15 @@ The template you want to use for the components and state that you might want to
 ```
 renderer.render('<section>...</section>', '.placeholderName');
 ```
-_Method sets the template for the output, all components will be added to this template_
+
+_Method sets the template for the output, all components will be added to this template._
+
 **html:string**  
 The components html that you want to load.
+
 **placeholder:string**  
 A html selector that should be the parent of the html you want to add. The contents of the placeholder will be removed before adding the new html.
+
 ---
 
 ### renderer.state(state)
@@ -39,12 +46,15 @@ A html selector that should be the parent of the html you want to add. The conte
 renderer.state({ data : [...], otherProperties : true });
 ```
 _Add data to an script tag that you can access on the client again. This prevents loading the same data on the client again. The data will be available by accessing `window.__state__`._
+
 **state:object**  
 An object that has been loaded on the server that you want to transfer to the client.
+
 ---
 
 ### renderer.html()
 ```
 renderer.html();
 ```
-_Get the final output of the template and components that you have created, this data can be send back as the response to the client_
+
+_Get the final output of the template and components that you have created, this data can be send back as the response to the client._
