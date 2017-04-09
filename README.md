@@ -31,7 +31,7 @@ The template you want to use for the components and state that you might want to
 renderer.render('<section>...</section>', '.placeholderName');
 ```
 
-_Method sets the template for the output, all components will be added to this template._
+_Adds a component to the template._
 
 **html:string**  
 The components html that you want to load.
@@ -45,7 +45,7 @@ A html selector that should be the parent of the html you want to add. The conte
 ```
 renderer.state({ data : [...], otherProperties : true });
 ```
-_Add data to a script tag that you can access on the client again. This prevents loading the same data on the client again. The data will be available by accessing `window.__state__`._
+_Add data to a script tag that you can access on the client again. This prevents loading the same data. The data will be available by accessing `window.__state__` as json._
 
 **state:object**  
 An object that has been loaded on the server that you want to transfer to the client.
