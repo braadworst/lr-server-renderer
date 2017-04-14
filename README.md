@@ -1,4 +1,4 @@
-# lg-server-renderer reference
+# lr-server-renderer reference
 
 Server side renderer for lagoon road.
 
@@ -10,7 +10,7 @@ Server side renderer for lagoon road.
 | Size (ex. dependencies) | 612 bytes |
 | Version | 1.0.0 |
 | License | MIT |
-| Usage | [lagoonroad.com/guide](https://www.lagoonroad.com/guide) |
+| Usage | [guide](https://lagoonroad.com/guide) |
 
 ---
 
