@@ -9,6 +9,9 @@ module.exports = () => {
       output = cheerio.load(template);
     },
     render(html, placeholder) {
+      if (!output) {
+        throw new Error('Cannot add component, template has not been set');
+      }
       if (output(placeholder).length === 0) {
         throw new Error(`Renderer could not render, placeholder "${ placeholder }" not found`);
       }
@@ -19,7 +22,11 @@ module.exports = () => {
       output('#state').replaceWith(`<script>window.__state__ = ${ JSON.stringify(state) }</script>`);
     },
     html() {
-      return output.html().trim();
+      if (output) { 
+        return output.html().trim() 
+      } else { 
+        return ''; 
+      }
     }
   }
 }
