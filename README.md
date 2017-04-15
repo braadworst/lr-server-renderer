@@ -5,7 +5,7 @@ Server side renderer for lagoon road.
 | Information | - |
 | ----------- | - |
 | Code coverage | [![Coverage Status](https://coveralls.io/repos/github/lagoon-road/lr-server-renderer/badge.svg?branch=master)](https://coveralls.io/github/lagoon-road/lr-server-renderer?branch=master) |
-| Repo link | [lr-core](https://github.com/lagoon-road/lr-server-renderer) |
+| Repo link | [lr-server-renderer](https://github.com/lagoon-road/lr-server-renderer) |
 | Dependencies | [cheerio](https://github.com/cheeriojs/cheerio) |
 | Size (ex. dependencies) | 612 bytes |
 | Version | 1.0.0 |
